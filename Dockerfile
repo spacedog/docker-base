@@ -16,6 +16,7 @@ RUN         yum -y -q makecache && \
 # Install packages
 RUN         yum -y -q install \
               ansible \
+              supervisord \
               git && \
             yum -y -q clean all
 
